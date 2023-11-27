@@ -4,9 +4,7 @@ mongoose.set("strictQuery", true);
 
 function connect() {
   mongoose
-    .connect(
-      `mongodb+srv://glopez:JoHrM4Wp38ptiKoh@cluster0.isdzt7a.mongodb.net/Ecommerce`
-    )
+    .connect(process.env.CONNECTION_STRINGS)
     .then((res) =>
       console.log("Conectado correctamente a la base de datos de mongoose")
     )

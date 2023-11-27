@@ -1,3 +1,6 @@
+//CONTROLLER CREADO PARA TRABAJAR EN MEMORIA Y TESTEAR DB
+
+
 const StudentScheme = require("../models/student");
 
 async function getStudents(req, res) {
