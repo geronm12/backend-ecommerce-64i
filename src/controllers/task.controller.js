@@ -31,7 +31,6 @@ async function addTask(req, res) {
   }
 }
 
-//paginación
 async function getAllTasks(req, res) {
   try {
     const { _id } = req.payload;
